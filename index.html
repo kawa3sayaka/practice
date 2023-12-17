@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Suitooou</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;900&display=swap" rel="stylesheet">
+  <!-- aos -->
+  <link rel="stylesheet" href="//unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- アニメーションライブラリ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="loading">Loading...</div>
+    <div id="youtube-area">
+    <h1>あなただけの水筒を</h1>
+    <div id="youtube"></div><!--youtube表示エリア-->
+    <div id="youtube-mask"></div><!--youtubeマスクエリア-->
+    </div>
+  </header>
+
+
+  <div id="container">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Suitooou</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Suitoou</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">ホーム</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ニュース</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">新規投稿</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">みんなの水筒</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- 以上nav -->
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <dotlottie-player src="https://lottie.host/ebc136d3-fb9a-4e5a-a6c8-99452a055a5f/jMAgFcNeJQ.json" background="transparent" speed="1" style="width: 100%; height: 100%" direction="1" mode="normal" loop autoplay></dotlottie-player>
+    <div class="title">
+      <h1>水筒の選び方のススメ</h1> 
+      <hr>
+    </div>
+
+    <!-- フリップ -->
+    <div class="flips">
+      <div id="flip_container">
+        <div data-aos="fade-up">
+          <div class = "flip-texts">
+            <h2>洗いやすさ</h2><br>
+            
+            <h4>毎日洗う水筒。<br><br>洗いやすくないと使わなくなっちゃう</h4>
+          </div>
+        </div>
+        <div data-aos="flip-left">
+          <div class="flip-pic">
+            <img src="watterbottles/bottle_2.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div id="flip_container" class = "second-flip">
+        <div data-aos="fade-up">
+          <div class = "flip-texts">
+            <h2>大きさ</h2><br>
+            <h4>バッグに入らなければ持ち歩かない。<br><br>
+              水筒の大きさに合わせたバッグを持とう</h4>
+          </div>
+        </div>
+        <div data-aos="flip-left">
+          <div class="flip-pic">
+            <img src="watterbottles/bottle_1.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div id="flip_container">
+        <div data-aos="fade-up">
+          <div class = "flip-texts">
+            <h2>機能的なデザイン</h2><br>
+            <h4>ワンタッチで開ける水筒は必ず漏れる！<br><br>
+              ひねって開けられるタイプにししよう</h4>
+          </div>
+        </div>
+        <div data-aos="flip-left">
+          <div class="flip-pic">
+            <img src="watterbottles/bottle_3.jpeg">
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="news-wrapper">
+    <h1>NEWS</h1>
+    <div class="news-container">
+      <p>2023/11/20</p>
+      <p>ニュースページが作成されました</p>
+    </div>
+    <div class="nav-to-news-page" a href="#">一覧で見る</div>
+  </div>
+
+    
+
+   
+  
+    
+<!--   
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            洗いやすさ
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>口を付ける部分が洗いづらいと不衛生</strong><br>
+            毎日使う＝毎日洗う。洗いやすさは使いやすさに直結するよ
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            水筒の大きさは毎日使うバッグに合わせる
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>バッグに入らなきゃ持ち歩かない</strong><br>
+            小さなバッグを持つことが多い？それならバッグを計ってみよう。マチの幅が広くても、上がすぼんでいる場合は大きな水稲は入らないよ（がま口など）。おすすめは箱型です！
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ひねって閉められる水筒にする
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>水漏れする水筒は二度と使わない</strong><br>
+            水筒はひねって開けられるものにしたい。ボタン一つで開閉できるものは、何かの拍子に水漏れしやすい  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <br><br>
+  
+    <h1>使いやすい水筒を選ぶコツ</h1>
+    <div class="card" style="width: 18rem;">
+      <img src="watterbottles/bottle_1.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">透明なボトル</h5>
+        <p class="card-text">100均で買うボトルはセリアが好き</p>
+        <a href="#" class="btn btn-primary">詳しく見る</a>
+      </div>
+    </div>
+    <br><br>
+  
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">350mlのボトルは無印良品一択</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">公式サイト</a>
+        <a href="#" class="card-link">Google mapで見る</a>
+      </div>
+    </div>
+    <br><br>
+  
+    <div class="card" style="width: 18rem;">
+      <img src="watterbottles/bottle_2.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ステンレス水筒のすすめ</h5>
+        <p class="card-text">ステンレスって保温性高すぎて猫舌には向かない</p>
+        <a href="#" class="btn btn-primary">楽天市場を見てみる</a>
+      </div>
+    </div>
+    <br><br> -->
+  
+    
+    <!-- <div class="d-grid gap-2 col-6 mx-auto">
+      <a class="btn btn-primary" href="newpost.html" role="button">新規投稿</a>
+    </div>
+    <br> -->
+
+    <ul class="nav justify-content-center bottom-nav">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">news</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">新規投稿</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-disabled="true">みんなの水筒</a>
+      </li>
+    </ul>
+
+  </div>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

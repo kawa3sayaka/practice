@@ -1,0 +1,178 @@
+@charset "utf-8";
+*{
+  font-family: 'Noto Serif JP', serif;
+}
+
+
+/*========= 背景動画設定のCSS ===============*/
+
+
+/*header設定*/
+#header{
+  position: relative;/*ローディング画像などを表示す際の基点とするため指定*/
+    height: 100vh;/*高さを全画面にあわせる*/
+    text-align: center;
+    color: #fff;
+    /*ローディング画面時＆動画が表示されないときに表示する背景画像のレスポンシブ化*/
+    background: url("../img/movie.jpg") no-repeat;
+    background-size: cover;
+}
+
+/* ローディングアイコン設定 */
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/*jQueryで付与されたdisappearクラスがついたらロゴエリアを非表示*/
+
+#loading.disappear{
+     display: none;   
+}
+
+
+/* youtube設定 */
+
+#youtube-area{
+    position: fixed;
+    z-index: 1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+  opacity: 0;    
+}
+
+/*jQueryで付与されたappearクラスがついたらYoutubeエリアをふわっと表示*/
+#youtube-area.appear {
+  animation-name:PageAnimeAppear;
+  animation-duration:.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes PageAnimeAppear{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
+
+#youtube {
+/*天地中央配置*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/*縦横幅指定*/
+  width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+  height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/*youtubeがクリックされないためのマスク*/
+#youtube-mask{
+    position: absolute;
+    z-index: 2;/*下から2番目に表示*/
+    top:0;
+    width:100%;
+    height: 100%;
+}
+
+
+/*youtube 上のロゴ */
+header h1{
+  position:absolute;
+  z-index: 2;/*下から2番目に表示*/
+/*天地中央配置*/
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+/*色指定*/
+  color:#fff;
+  text-shadow: 0 0 15px #666;
+}
+
+/*下のコンテンツ*/
+#container{ 
+  position: relative;/*relativeを指定してfixed指定をした#youtube-areaの上に表示*/
+  z-index: 3;/*一番上に表示*/
+  /*見た目の調整*/
+  background:#fff;
+  color: #666;
+  padding:150px;
+}
+#container .title{
+  width: max-content;
+  margin:30% auto;
+  position: relative;
+  z-index: 5;/*一番上に表示*/
+}
+
+/* フリップ */
+.flip-texts{
+  color: #666;
+  width: max-content;
+  margin:10%;
+  padding: 10px;
+}
+
+
+#flip_container{
+	text-align: center;
+  max-width: 100%;
+  height: auto;
+  margin: 20% 0;
+}
+.flip-pic img{
+  max-width: 90%;
+  height: auto;
+  border-radius: 15%;
+}
+/* pc size */
+@media (min-width: 800px) { 
+  #flip_container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .second-flip{
+    flex-direction: row-reverse;
+  }
+}
+
+/*news-wrapper*/
+.news-wrapper{
+  width:100%;
+  height: 100%;
+  background-color: rgb(30, 142, 212);
+  border-radius: 30px;
+  color: #fff;
+  padding: 15%;
+}
+.news-wrapper h1{
+  text-align: center;
+}
+.news-container{
+  margin-top: 10%;
+}
+.nav-to-news-page{
+  margin-top: 20%;
+  margin-bottom: 2%;
+  text-align: right;
+}
+
+
+/* ボトム */
+.bottom-nav{
+  margin-top: 10%;
+}
+.bottom-nav .nav-link{
+  color: #666;
+}

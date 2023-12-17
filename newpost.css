@@ -1,0 +1,26 @@
+/* loading page */
+.loading-page{
+    animation: hide 3.5s ease 5s forwards;
+  
+    /* animation: hide ease 4.5s; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin: 0 auto;
+   }
+   @keyframes hide{
+    0%{
+      opacity: 1;
+      visibility: visible;
+    }
+    70%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+      visibility:hidden;
+    }
+   }
